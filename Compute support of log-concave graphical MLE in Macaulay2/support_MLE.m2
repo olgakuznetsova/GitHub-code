@@ -28,7 +28,7 @@ M = transpose matrix {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}
 M = transpose matrix {{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 0}, {0, 0, 0, 1}}
 M = transpose matrix {{1, 0, 0, 0, 0}, {0, 1, 0, 0, 0}, {0, 0, 1, 0, 0}, {0, 0, 0, 1, 0}, {0, 0, 0, 0, 1}}
 M = transpose matrix {{1, 0, 0, 0, 0, 0}, {0, 1, 0, 0, 0, 0}, {0, 0, 1, 0, 0, 0}, {0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 1, 0}, {0, 0, 0, 0, 0, 1}}
-
+M= transpose matrix{{0,0,0,0},{1,0,0,0},{1,1,0,0},{1,1,1,0},{0,0,0,1},{0,0,1,1},{0,1,1,1},{1,1,1,1}}
 -- compute the support of the MLE
 time supp = suppMLE(M,C);
 -- compute the volume of the support of the MLE
@@ -36,6 +36,6 @@ time supp = suppMLE(M,C);
 
 -- compute recursively the sets D_G^i
 -- the command prints whether the algorithm converges or not after N iterations
-N = 100;
+N = 1;
 elapsedTime (O,I,D) = DGrecursive(N,M,globalG);
 D == supp -- if the algorithm converged, check that the limit coincides with the support of MLE
