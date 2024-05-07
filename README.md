@@ -16,3 +16,7 @@ The repository contains two folders
 
 #### Reference
 Kubjas, K., Kuznetsova, O., Robeva, E., Semnani, P., & Sodomaco, L. (2022). Log-concave density estimation in undirected graphical models. arXiv preprint [arXiv:2206.05227](https://arxiv.org/abs/2206.05227). 
+
+
+#### Acknowledgements
+The authors thank Joshua Boyd for improving the implementation of the optimisation function in the code.
